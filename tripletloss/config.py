@@ -8,8 +8,8 @@ IMAGEPATH = ''
 SNAPSHOT_ITERS = 10000
 
 # Max training iteration
-MAX_ITERS = 400000
+MAX_ITERS = 160000
 
 # The number of samples in each minibatch
-BATCH_SIZE = 30
+BATCH_SIZE = 64
 
