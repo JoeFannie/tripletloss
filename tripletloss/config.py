@@ -2,7 +2,7 @@ import os
 from numpy import *
 
 # Training image data path
-IMAGEPATH = '/home/seal/dataset/fast-rcnn/caffe-fast-rcnn/data/Facedevkit/tripletloss/'
+IMAGEPATH = ''
 
 # Snapshot iteration 
 SNAPSHOT_ITERS = 10000
