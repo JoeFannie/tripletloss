@@ -20,10 +20,11 @@ class sampledata():
         self._sample_negative = {}
         self._sample = []
         self._sample_label = {}
-        lines = open('../data/train_val.txt','r')
+        lines = open('/gruntdata/DL_dataset/caojiajiong/workspace/1w80/lessImages/train_1w_80.txt','r')
         for line in lines:
-            personname = line.split('@')[0]
-            picname = line.split(' ')[0]
+            imgpath = line.split(' ')[0]
+            personname = imagepath.split('/')[-2]
+            picname = imagepath.split('/')[-1]
             self._sample.append(picname)
             if personname in self._sample_person.keys():
                 self._sample_person[personname].append(picname)
