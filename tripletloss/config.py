@@ -2,7 +2,7 @@ import os
 from numpy import *
 
 # Training image data path
-IMAGEPATH = '/home/seal/dataset/fast-rcnn/caffe-fast-rcnn/data/Facedevkit/tripletloss/'
+IMAGEPATH = ''
 
 # Snapshot iteration 
 SNAPSHOT_ITERS = 10000
@@ -11,5 +11,5 @@ SNAPSHOT_ITERS = 10000
 MAX_ITERS = 400000
 
 # The number of samples in each minibatch
-BATCH_SIZE = 30
+BATCH_SIZE = 64
 
