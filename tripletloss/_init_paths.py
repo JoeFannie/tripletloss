@@ -16,7 +16,7 @@ def add_path(path):
 this_dir = osp.dirname(__file__)
 
 # Add caffe to PYTHONPATH
-caffe_path = osp.join('/gruntdata/DL_dataset/caojiajiong/caffe-triplet/caffe-windows/', 'python')
+caffe_path = osp.join('/gruntdata/DL_dataset/caojiajiong/caffe-windows/', 'python')
 add_path(caffe_path)
 
 # Add lib to PYTHONPATH
