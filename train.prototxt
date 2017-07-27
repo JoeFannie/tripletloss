@@ -1167,33 +1167,18 @@ layer {
     layer: "Norm2Layer"
   }
 }
-layer {
-  name: "fc9_1"
-  type: "InnerProduct"
-  bottom: "norm2"
-  top: "fc9_1"
-  param {
-    lr_mult: 1
-    decay_mult: 0
-  }
-  inner_product_param {
-    num_output: 512
-    weight_filler {
-      type: "xavier"
-    }
-  }
-}
+
 #add activation layer may increase the feature's expression
 layer {
-  name: "relu9_1"
+  name: "relufc5"
   type: "PReLU"
-  bottom: "fc9_1"
-  top: "fc9_1"
+  bottom: "fc5"
+  top: "fc5"
 }
 layer {
   name: "triplet_select"
   type: "Python"
-  bottom: "fc9_1"
+  bottom: "fc5"
   bottom: "labels"
   top: "archor"
   top: "positive"
